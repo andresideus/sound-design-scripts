@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import sys
 import os
@@ -69,7 +69,7 @@ if raw_input('copy files?: ') == 'y':
 	src = recorded_file_dir + '/' + key
 	dst = dest_path + '/' + value
 
-	dst = dst[:-4] + '_' + mtime_str  + '_' \
+	dst = dst[:-4] + '_' \
 	    + dst[-4:]
 	copyfile(src, dst)
 	print 'copied: ' + src + ' -> ' + dst
