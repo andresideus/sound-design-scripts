@@ -1,4 +1,4 @@
-mport os
+import os
 import shutil
 import simpleaudio as sa
 import time
