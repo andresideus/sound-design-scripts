@@ -14,7 +14,7 @@ folder = os.path.join('/Volumes', config['sd_card'])
 for sub_dir in os.listdir(folder):
     sub_path = os.path.join(folder, sub_dir)
     if os.path.isdir(sub_path):
-        wav_files = [f for f in os.listdir(sub_path) if f.lower().endswith('.wav')]
+        wav_files = [f for f in os.listdir(sub_path) if f.lower().endswith('.WAV')]
         if wav_files:  # If there are .wav files in the directory
             print(f'Previewing: {wav_files[0]}')
             wave_obj = sa.WaveObject.from_wave_file(os.path.join(sub_path, wav_files[0]))
